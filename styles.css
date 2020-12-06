@@ -23,6 +23,8 @@ ul {
     
 }
 
+
+
 #right-bar {
     display: flex;
     width: 50%;
@@ -38,6 +40,11 @@ ul {
     color: #000000;
     padding: 0px 10px 0px 10px;
 }
+
+.list:hover{
+    text-decoration: underline;
+}
+
 
 #menu {
     height: 25px;
@@ -61,6 +68,15 @@ margin-right: 20px;
     margin: auto;
     display: flex;
     justify-content: center; 
+    padding-left: 4vw;
+}
+
+
+
+.search img { 
+    position: absolute; 
+    top: 2px; 
+    right: 5px 
 }
 
 #search-form{
@@ -72,18 +88,81 @@ margin-right: 20px;
 
 .round {
     width: 100%;
-    border-radius: 15px;
-    border: 1px #000 solid;
+    border-radius: 30px;
+    border: .5px lightgrey solid;
     padding: 5px 25px 5px 25px;
     position: absolute;
     top: 0;
     left: 0;
+    height: 25px;
    
+}
+
+.round:hover {
+    
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.round:focus {
+    outline:0;
 }
 
 
 .search {
     position: relative;
-    width: 190px;
-    height: 30px;
+    width: 400px;
+    
+}
+
+#button-container{
+    display: flex;
+    width: 350px;
+    height: 60px;
+    margin: auto;
+    padding-top: 50px;
+    justify-content: center; 
+    overflow: hidden;
+}
+
+#goo{
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 2px;
+    opacity: 0.75;
+    height: 36px;
+    padding-right: 10px;
+}
+
+#lucky{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    float: right;
+    border: none;
+    border-radius: 2px;
+    opacity: 0.75;
+    height: 36px;
+    padding-left: 10px;
+}
+
+#goo:hover {
+    
+    box-shadow: 0 0 10px lightgray;
+}
+
+#goo:focus {
+    outline:0;
+}
+
+
+#lucky:hover {
+    
+    box-shadow: 0 0 10px lightgray;
+}
+
+#lucky:focus {
+    outline:0;
 }
