@@ -89,6 +89,13 @@ margin-right: 20px;
     padding-left: 4vw;
 }
 
+@media screen and (max-width: 700px) {
+#image{
+    width: 30%;
+    height: 30%;
+}
+}
+
 #search-form{
     margin: auto;
     display: flex;  
@@ -234,6 +241,14 @@ margin-right: 20px;
     justify-content: space-between;
 }
 
+@media screen and (max-width: 700px) {
+    .footer {
+      display: flex;
+      flex-direction: column;
+      height: 7.5rem;
+    }
+  }
+
 .footerleft {
     display: flex;
     justify-content: space-evenly;
@@ -241,7 +256,8 @@ margin-right: 20px;
 }
 
 .footermiddle{
-    
+    display: flex;
+    justify-content: space-evenly;
     list-style-type: none;
 }
 
