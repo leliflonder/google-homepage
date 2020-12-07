@@ -30,6 +30,7 @@ ul {
     width: 50%;
     justify-content: flex-end;
     
+    
 }
 
 .list {
@@ -38,12 +39,29 @@ ul {
     text-decoration: none;
     display: flex;
     color: #000000;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 10px;
 }
+
+a:link{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #000000;
+    
+  }
+
+  a:active {
+    color: black;
+    text-decoration: none;
+  }
 
 .list:hover{
     text-decoration: underline;
 }
+
 
 
 #menu {
@@ -71,14 +89,6 @@ margin-right: 20px;
     padding-left: 4vw;
 }
 
-
-
-.search img { 
-    position: absolute; 
-    top: 2px; 
-    right: 5px 
-}
-
 #search-form{
     margin: auto;
     display: flex;  
@@ -91,10 +101,12 @@ margin-right: 20px;
     border-radius: 30px;
     border: .5px lightgrey solid;
     padding: 5px 25px 5px 25px;
+    background-color: transparent;
     position: absolute;
     top: 0;
     left: 0;
     height: 25px;
+   
    
 }
 
@@ -115,12 +127,54 @@ margin-right: 20px;
     
 }
 
+
+
+
+.loupebutton {
+    margin-top: 8px;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background: transparent;
+    background-image: url(https://icons-for-free.com/iconfiles/png/512/explore+find+magnifier+search+icon-1320185008030646474.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.micdiv{
+
+    width: 455px;
+    padding-left: 5px;
+    width: 443px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.micbutton {
+    margin-top: 5.5px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    background-image: url(https://i.imgur.com/l5S4LZ2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+}
+
 #button-container{
     display: flex;
     width: 350px;
     height: 60px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 0px;
     justify-content: center; 
     overflow: hidden;
 }
@@ -165,4 +219,55 @@ margin-right: 20px;
 
 #lucky:focus {
     outline:0;
+}
+
+.footer{
+    background-color: #efefef;
+    display: flex;
+    flex-direction: row;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: space-between;
+}
+
+.footerleft {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.footermiddle{
+    
+    list-style-type: none;
+}
+
+.footerright{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#Ads{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#Bus{
+    padding-right: 10px;
+}
+
+#Priv{
+    padding-right: 10px;
+}
+
+#Ter{
+    padding-right: 10px;
+}
+
+#Set{
+    padding-right: 10px;
 }
